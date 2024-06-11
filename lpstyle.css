@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: column;
 }
+.pg1-container{
+    position: relative;
+    background-image: url('images/Base\ BG.svg');
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+}
 .name-desig{
     display: flex;
     flex-direction: column;
