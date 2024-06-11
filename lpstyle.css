@@ -1,0 +1,196 @@
+.hero-section, .work{
+    display: flex;
+    flex-direction: column;
+}
+.name-desig{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    float: right;
+    text-align: end;
+    margin:8% 4% 0 4%;
+
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 80px;
+}
+.desig{
+    font-size: 55px;
+    font-weight: 500;
+    color: #A9A9A9;
+}
+.chat-graphic{
+    display: flex;
+    flex-direction: column;
+    color: #A9A9A9;
+
+    margin: 4%;
+    width: 64%;
+
+    font-family: 'Syne';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.bubble-1{
+    padding: 0.5% 4%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(175, 94, 255, 0.28);
+    backdrop-filter: blur(2.25px);
+    border-radius: 100px 100px 100px 25px;
+    width: fit-content;
+
+}
+.bubble-2{
+    padding: 0.5% 4%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(175, 94, 255, 0.28);
+    backdrop-filter: blur(2.25px);
+    border-radius: 50px 100px 100px 25px;
+    width: fit-content;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.work-header{
+    display: flex;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 8%;
+
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 0;
+
+    color: #FFFFFF;
+}
+
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1640px;
+    margin: 0% 8% 10%;
+
+    height: auto;
+    transition: all .3s ease;
+    
+}
+.gridcontainer{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    min-height: 25vw;
+    max-width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    
+    font-family: 'Red Hat Display';
+    font-weight: 200;
+    line-height: 0;
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease;
+
+}
+.left-row1{
+    border-radius: 50px 0 0 0;
+    background-color: rgba(255, 210, 96, 0.3);
+}
+.right-row1{
+    border-radius: 0 50px 0 0;
+    background-color: rgba(255, 167, 167, 0.3);
+}
+.left-row2{
+    border-radius: 0 0 0 50px;
+    background-color: rgba(0, 99, 19, 0.3);
+}
+.right-row2{
+    border-radius: 0 0 50px 0;
+    background-color: rgba(58, 146, 44, 0.3);
+}
+.cell-content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5% 10%;
+    z-index: 1;
+}
+.cell-header{
+    display: flex;
+    flex-direction: column;
+}
+.cell-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+
+    font-family: 'Red Hat Display';
+    font-weight: 800;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+.cell-content-brief{
+    font-family: 'Red Hat Mono';
+    font-weight: 400;
+    font-size: 0.8vw;
+    z-index: 1;
+}
+.gclt-images{
+    display: flex;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+.cyclo-thumbnail{
+    position: absolute;
+    width: 80%;
+    right: 10%;
+    border-radius: 1vw;
+    bottom: -10%;
+    box-shadow: 4px 4px 20px 12px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.pthumbnail{
+    position: absolute;
+    width: 120%;
+    bottom: -80%;
+    left: 8%;
+    z-index: 0;
+} 
+
+.ozithumbnail{
+    position: absolute;
+    width: 90%;
+    bottom: -8%;
+    left: 6%;
+}
+.rft-thumbnail{
+    position: absolute;
+    width: 80%;
+    bottom: -2%;
+    left: 8%;
+}
+.gridcontainer:hover{
+    transform: scale(0.98);
+    z-index: 1;
+}
+@media screen and (max-width:768px) {
+    .work-grid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .gridcontainer{
+        min-height: 35vw;
+    }
+}
