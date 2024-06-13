@@ -1,3 +1,6 @@
+/*Content margins 60%
+Header Margins 70%
+*/
 body{
     overflow-x: hidden;
     z-index: -1;
@@ -11,24 +14,41 @@ body{
     
     font-family: 'Syne';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.2vw;
+    line-height: 1.6vw;
     color: #5F5F5F;
 }
+.pg2-container, .pg3-container, .pg4-container, .pg5-container, .pg6-container, .pg7-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+    font-family: 'Syne';
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 1.6vw;
+    color: #9D9D9D;
+}
+
 .hero-section{
     display: flex;
     position: relative;
     flex-direction: column;
     width: 100%;
-    min-height: 100px;
+    min-height: 5vw;
+    height: auto;
     overflow-y: hidden; 
 
 }
 .hs-bg{
     position: absolute;
-    min-height: 300px;
+    min-height: 22vw;
     width:  100%;
     background-color: rgb(255, 255, 255);
-    border-radius: 0 0 200px 200px;
+    border-radius: 0 0 15vw 15vw;
     z-index: -1;
     
 }
@@ -36,12 +56,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
     
-    margin-top: 50px;
+    margin: 8% auto 2%;
     font-family: 'Red Hat Display';
     font-style: italic;
     font-weight: 900;
-    font-size: 128px;
+    font-size: 5vw;
 
     color: #545454;
 }
@@ -56,25 +77,27 @@ body{
     background: linear-gradient(180deg, #555555 2.65%, #262626 29.31%, #1C1C1C 40.48%, #171717 52.24%, #171717 58.55%, #171717 100%);
 }
 .landingpg-mockup{
-    margin: 150px auto;
-    text-align: center;
+    margin: -1vw auto 0;
+    width: 60%;
 }
-
+.lpg-mockup{
+    width: 100%;
+}
 /* Group 39554 */
 .page-title{
     display:flex;
     position: relative;
-    width: 65%;
-    margin: 0 auto 4%;
+    width: 75%;
+    margin: 10vh auto 8vw;
 }
 
 .title-frame{
     box-sizing: border-box;
     width: 100%;
-    height: 53px;
+    height: 2.5vw;
     
     border: 3px solid #D3D3D3;
-    border-radius: 86px;
+    border-radius: 2vw;
 }
 
 .bgblend-bar, .bgblend-bar2{
@@ -96,13 +119,13 @@ body{
     position: absolute;
 
     right: 5%;
-    top: -30px;
+    top: -30%;
     z-index: 2;
     
     font-family: 'Syne';
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 2vw;
 
     text-align: right;
     
@@ -113,75 +136,68 @@ body{
 .s-no{
     position: absolute;
 
-    left: 70px;
-    top: -30px;
+    left: 5%;
+    top: -30%;
     z-index: 2;
     
     font-family: 'Syne';
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 2vw;
 
     color: #FFFFFF;
 }
 
 .text-content{
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    width: 65%;
-
-    margin:auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
     
     color: #9D9D9D;
 }
-
+.tc-row1, .tc-row2, .tcr3b{
+    display:flex;
+    flex-direction: row;
+}
 .tc-para-box{
     width: 55%;
     text-align: justify;
 }
 .tc-para-overview{
     color:white;
-    margin-top: 50px;
+    margin-top: 1vw;
 }
-.tc-row1, .tc-row2, .tcr3b{
-    display:flex;
-    flex-direction: row;
-}
+
 .tc-row1-box{
     display: flex;
     flex-direction: row;
     float: right;
     width: 40%;
-    height: 191px;
+    height: 8vw;
     margin-left: 5%;
-    padding-right: 25px;
+    padding: 1rem;
     justify-content:space-evenly;
     align-items: center;
 
     background: rgba(255, 195, 79, 0.02);
     border: 3px solid rgba(184, 145, 69, 0.4);
-    border-radius: 40px;    
+    border-radius: 3vh;    
 }
 .tcr1b{
     display: flex;
     flex-direction: column;
     width:35%;
     text-align: right;
+    
 }
 .tcrb1b-title, .tcrb1b-text{
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
     text-align: right;
 }
 .tcrb1b-title{
-    font-size: 32px;
+    font-size: 1.5vw;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 
     color: #B89145;
 }
@@ -199,13 +215,13 @@ body{
     flex-direction: row;
 
     width: 100%;
-    height: 200px;
-    margin-top:70px;
+    height: 10vw;
+    margin-top:8%;
     margin-bottom: 150px;
     align-items: center;
     background: rgba(255, 195, 79, 0.02);
     border: 3px solid rgba(184, 145, 69, 0.4);
-    border-radius: 40px;    
+    border-radius: 3vh;    
 }
 
 .tcr3b-title{
@@ -214,16 +230,12 @@ body{
     text-align: right;
     align-items:start;
 
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 600;
     color: white;
 }
 .tcr3b-text{
     margin-right: 5%;
-
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 34px;
     text-align: justify;
     color: #9D9D9D;
 }
@@ -235,12 +247,7 @@ body{
     width: 65%;
     row-gap: 4vw;
 
-    font-family: 'Syne';
-    font-size: 1.2vw;
-    font-weight: 500;
-    line-height: 29px;
     text-align: justify;
-    color: #9D9D9D;
     background-color: #171717;
 }
 
@@ -371,17 +378,10 @@ body{
     margin:50 228 100 228px;
     font-family: 'Syne';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.2vw;
     text-align: center;
     justify-content: center;
     color: #9D9D9D;
-}
-
-/* Rectangle 669 */
-.pg5-sw-images{
-    display: block;
-
-    background-color: #171717;
 }
 .wfbg{
     width: 100%;
@@ -495,7 +495,6 @@ body{
     background-color: #171717;
     margin: 100px auto;
     width: 100%;
-    height: 1800px;
 }
 
 .pd-pg-content{
@@ -517,45 +516,7 @@ body{
     align-items: end;
     white-space: nowrap;
 }
-.pd-pg-images{
-    position: relative;
-    background-color: #171717;
-}
-.pd-img1, .pd-img2, .pd-img3, .pd-img4, .pd-img5, .pd-img6, .pd-img7, .pd-img8{
-    width: 660px;
-    height: 500px;
-    position: absolute;
 
-}
-.pd-img1{
-    left:-290px;
-}
-.pd-img2{
-    left: 410px;
-}
-.pd-img3{
-    left: 1110px;
-}
-.pd-img4{
-    top:540px;
-    left: 60px;
-}
-.pd-img5{
-    top:540px;
-    left: 770px;
-}
-.pd-img6{
-    top:1080px;
-    left:-290px;
-}
-.pd-img7{
-    top:1080px;
-    left:410px;
-}
-.pd-img8{
-    top:1080px;
-    left:1110px;
-}
 .ch-content{
     display: flex;
     flex-direction: column;

@@ -52,12 +52,15 @@ body{
     backdrop-filter: blur(5px);
 }
 
-
+.page-footer{
+    display: flex;
+    flex-direction: column;
+}
 .footer-container{
     display: flex;
     flex-direction: row;
     width: auto;
-    height: 550px;
+    height: 50vh;
 
     padding-left: 123px;
     padding-right: 123px;
@@ -66,7 +69,7 @@ body{
 
     font-family: 'Syne';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.2vw;
     color: #5F5F5F;
     background-color: #191919;
     color: white;
@@ -76,18 +79,20 @@ body{
     flex-direction: column;
     text-align: left;
 
-    margin-top: 100px;
+    margin-top: 10%;
 }
 .ftr-title{
-    font-size: 64px;
-    font-weight: 700;
+    font-size: 4vw;
+    text-wrap: pretty;
+    font-weight: 600;
 }
 .ftr-links{
     display: flex;
     flex-direction: row;
     width: 70%;
+    min-width: 280px;
 
-    margin-top: 40px;
+    margin-top: 8%;
 
     justify-content: space-between;
 }
@@ -106,13 +111,14 @@ body{
 .ftr-link-button:hover{
     background-color: #4b4b4b79;
 }
-/* Ellipse 186 */
+
 .footnote{
     display: flex;
     flex: 1;
     justify-content: end;
     align-items: baseline;
-    margin-top: 250px;
+    margin-top: 10%;
+    text-wrap: nowrap;
 }
 .ftr-row-r{
     align-items:end;
@@ -126,4 +132,10 @@ body{
     font-size: 32px;
     font-weight: 400;
     color: #206CFF;
+}
+@media screen and (max-width:768px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: left;
+    }
 }
