@@ -105,28 +105,37 @@
         </section>
     </section>
     <footer id="footer" class="page-footer">
-        <div class="footer-container">
-            <div class="ftr-row-l">
-                <div class="ftr-title">Get in touch.</div>
-                <div class="ftr-links">
-                    <a href="https://www.behance.net/adildanad" target="_blank" class="ftr-link-button">
-                        <img src="icons/behanceicon.svg" class="beicon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/adilsanad" target="_blank" class="ftr-link-button">
-                        <img src="icons/in.svg" class="inicon">
-                    </a>
-                    <a href="mailto:adilsanad059@gmail.com" target="_blank" class="ftr-link-button">
-                        <img src="icons/mailvector.svg" class="mailicon">
-                    </a>
+        <div class="footer-container grid-2">
+            <div class="span-2">
+            <div class="ftr-title">Get in touch.</div>
+                <div class="ftr-row-l flex-row">
+                    <div class="ftr-links">
+                        <a href="https://www.behance.net/adildanad" target="_blank" class="ftr-link-button">
+                            <img src="icons/behanceicon.svg" class="ftricon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/adilsanad" target="_blank" class="ftr-link-button">
+                            <img src="icons/in.svg" class="ftricon">
+                        </a>
+                        <a href="mailto:adilsanad059@gmail.com" target="_blank" class="ftr-link-button">
+                            <img src="icons/mailvector.svg" class="ftricon">
+                        </a>
+                    </div>
+                    <div class="footnote">
+                        <div class="ftr-row-r">Made with <span class="flair">&nbsp; &lt; &gt; &nbsp;</span> by yours truly.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="footnote">
-                <div class="ftr-row-r">Made with </div>
-                <span class="flair">&nbsp; &lt; &gt; &nbsp;</span> 
-                <div class="ftr-row-r">by yours truly.</div>
             </div>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script>
+        function showSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
 </body>
 </html>
