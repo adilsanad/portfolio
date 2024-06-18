@@ -1,3 +1,7 @@
+body{
+    font-size: 1.2rem;
+    line-height: 1.15;
+}
 .hero-section, .work{
     display: flex;
     flex-direction: column;
@@ -15,14 +19,14 @@
     color: white;
     float: right;
     text-align: end;
-    margin:8% 4% 0 4%;
+    margin:10% 4% 2%;
 
     font-family: 'Syne';
     font-weight: 700;
-    font-size: 80px;
+    font-size: 5em;
 }
 .desig{
-    font-size: 55px;
+    font-size: 0.6em;
     font-weight: 500;
     color: #A9A9A9;
 }
@@ -36,26 +40,21 @@
 
     font-family: 'Syne';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.2em;
 }
 
-.bubble-1{
-    padding: 0.5% 4%;
+.bubble-1, .bubble-2{
+    padding: 0.5em 2em;
     margin-bottom: 10px;
     background: rgba(0, 0, 0, 0.2);
     border: 2px solid rgba(175, 94, 255, 0.28);
-    backdrop-filter: blur(2.25px);
-    border-radius: 100px 100px 100px 25px;
+    backdrop-filter: blur(5px);
+    border-radius: 5vw 5vw 5vw 2vw;
     width: fit-content;
 
 }
 .bubble-2{
-    padding: 0.5% 4%;
-    background: rgba(0, 0, 0, 0.2);
-    border: 2px solid rgba(175, 94, 255, 0.28);
-    backdrop-filter: blur(2.25px);
     border-radius: 50px 100px 100px 25px;
-    width: fit-content;
 }
 .work{
     display: flex;
@@ -199,5 +198,8 @@
     }
     .gridcontainer{
         min-height: 35vw;
+    }
+    body{
+        font-size: 12px;
     }
 }

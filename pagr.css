@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     font-family: 'Syne';
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #C1C1C1;
 }
 a{
@@ -59,19 +59,32 @@ a{
     height: auto;
     width: 100%;
 }
+.db-container{
+    gap: 2em;
+    text-align: justify;
+}
+.db-sc-head{
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.15;
+}
+.db-sc-head-title{
+     font-size: 1.6em;
+     color: white;
+}
 .subcontainer{
     max-width: 1240px;
-    padding: 0 1rem;
+    padding: 2rem 1rem 4rem 1rem;
     margin: auto;
 }
 .subcontainer-l{
     max-width: 1360px;
-    padding: 0 1rem;
+    padding: 2rem 1rem 4rem 1rem;
     margin: auto;
 }
 .subcontainer-xl{
     max-width: 1440px;
-    padding: 0 1rem;
+    padding: 2rem 1rem 4rem 1rem;
     margin: auto;
 }
 .project-grid{
@@ -107,6 +120,7 @@ a{
 }
 .pgrid-box{
     text-align: start;
+    text-wrap: wrap;
     padding: 2em;
 
 }
@@ -115,9 +129,7 @@ a{
     font-weight: 600;
     color: white;
 }
-.pgrid-box-text{
-    text-wrap: wrap;
-}
+
 .tcr3{
     column-gap: 2em;
 }
@@ -200,14 +212,39 @@ a{
     color: white;
     margin: 2rem auto 2rem;
 }
-.pg5-main-graphic, .wf-bg, .wfbg, .pagrbicolor, .pg6-lp-screen, .lp-sc-png, .ch-process, .map-img{
-    width: 100%;
+.pg5-bi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.brand-identity{
+    margin-top: 5em;
+    margin-bottom: 3em;
+    row-gap: 5em;
+    column-gap: 3em;
+}
+.pagrbilogo{
+    height: max-content;
+}
+.map-img{
     margin-bottom: 5em;
 }
-.pg5-bi-clr, .pg5-type, .pagrbilogo, .pagrbiphone, .pagrbitypo, .chimg, .spimg, .cm-pg, .filterimg{
+.mb, .pg5-main-graphic, .wf-bg, .wfbg, .pagrbicolor{
     width: 100%;
 }
-.brand-identity, .nav-menu{
+.pg5-type, .pg6-lp-screen, .lp-sc-png, .pagrbilogo, .pagrbiphone, .pagrbitypo, .chimg, .spimg, .cm-pg, .map-img, .filterimg{
+    width: 100%;
+}
+.filter-content{
+    width: 35%;
+    margin-top: -5em;
+    min-width: 250px;
+}
+.filter-img{
+    width: 60%;
+    margin-right: -4em;
+}
+.nav-menu{
     margin-bottom: 3rem;
     gap: 3rem;
 }
@@ -224,9 +261,16 @@ a{
     border-radius: 5vw;
     padding: 2em;
 }
+.cm-pg-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em 3em;
+    justify-content: center;
+    align-items: center;
+}
 .cm-pg{
     display: flex;
-    padding: 1em 1em 0 1em;
+    padding: 1em 0.5em 0 0.5em;
     align-self: center;
 }
 .profile-container{
@@ -246,6 +290,9 @@ a{
 @media screen and (max-width:768px) {
     body{
         font-size: 16px;
+    }
+    .text-centre{
+        text-align: justify;
     }
 
 }
