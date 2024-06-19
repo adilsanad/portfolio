@@ -109,8 +109,8 @@ body{
     font-size: 1em;
 }
 .ftr-row-r{
-    align-items:end;
-    text-align: right;
+    align-items:start;
+    text-align: left;
 
     font-size: 1em;
     font-weight: 200;
@@ -174,9 +174,7 @@ body{
     .ftr-row-r{
         max-width: 120px;
     }
-    .page-title{
-        font-size: 10px;
-    }
+
 }
 @media screen and (min-width:768px) and (max-width:992px) {
     
