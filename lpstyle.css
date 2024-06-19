@@ -17,7 +17,6 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
-    float: right;
     text-align: end;
     margin:10% 4% 2%;
 
@@ -73,7 +72,7 @@ body{
     font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 3em;
     line-height: 0;
 
     color: #FFFFFF;
@@ -197,9 +196,50 @@ body{
         grid-template-columns: repeat(1, 1fr)
     }
     .gridcontainer{
-        min-height: 35vw;
+        min-height: 50vw;
+    }
+    .left-row1{
+        border-radius: 2em 2em 0 0;
+    }
+    .right-row1, .left-row2{
+        border-radius: 0;
+    }
+    .right-row2{
+        border-radius: 0 0 2em 2em;
+    }
+    .cell-title{
+        font-size: 5vw;
+    }
+    .cell-content-brief{
+        display: none;
     }
     body{
         font-size: 12px;
+    }
+    .name-desig{
+        justify-content: center;
+        text-align: center;
+    }
+    .chat-graphic{
+        font-size: 1.5em;
+        width: 100%;
+        margin: 5em 0 2em;
+        padding: 0 2em;
+        justify-content: center;
+        text-align: justify;
+    }
+    .bubble-1{
+        padding: 2em;
+        border-radius: 5vw 5vw 2vw 2vw;
+    }
+    .bubble-2{
+        border-radius: 2vw 2vw 5vw 5vw;
+    }
+    .bubble-1, .bubble-2{
+        width: 100%;
+    }
+    .work-header{
+        font-size: 2em;
+        line-height: 0.5;
     }
 }
