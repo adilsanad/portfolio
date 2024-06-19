@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     font-family: 'Syne';
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #C1C1C1;
 }
 a{
@@ -65,11 +65,25 @@ a{
     padding: 0 1rem;
     margin: auto;
 }
+.db-container{
+    gap: 2em;
+    text-align: justify;
+}
+.db-sc-head{
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.15;
+}
+.db-sc-head-title{
+     font-size: 1.6em;
+     color: white;
+}
+
 .project-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 60px;
-    row-gap: 15px;
+    column-gap: 2em;
+    row-gap: 0.5em;
 
     max-width: 1240px;
     padding: 0 1rem;
@@ -92,8 +106,13 @@ a{
     border: 3px solid rgba(184, 145, 69, 0.4);
     border-radius: 3vh;
 }
+.pgrid-box-text{
+    max-width: 75px;
+    text-wrap: wrap;
+}
 .pgrid-box{
     text-align: start;
+    text-wrap: wrap;
     padding: 2em;
 
 }
@@ -102,12 +121,11 @@ a{
     font-weight: 600;
     color: #B89145;
 }
-.pgrid-box-text{
-    text-wrap: wrap;
-}
+
 .tcr3{
-    column-gap: 30px;
+    column-gap: 2em;
 }
+
 .ur-tc-flex{
     display: flex;
     flex-direction: column;
@@ -182,26 +200,49 @@ a{
     text-align: justify;
     font-size: 0.8em;
 }
-.section-title{
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin: 2rem auto 2rem;
-}
-.pg5-main-graphic, .wf-bg, .wfbg, .pg6-lp-screen, .lp-sc-png, .pd-pg, .ch-process, .sp-images{
+
+.pg5-main-graphic, .wf-bg, .wfbg, .pg6-lp-screen, .pd-pg, .ch-process, .sp-images{
     width: 100%;
     margin-bottom: 5em;
 }
-.pg5-bi-clr, .pg5-type, .cyclobisvg, .cyclotyposvg, .nav-menu-png, .chimg, .spimg{
+.pg5-bi-clr, .pg5-type, .cyclobisvg, .cyclotyposvg, .lp-sc-png, .nav-menu-png, .chimg, .spimg{
     width: 100%;
 }
 .brand-identity, .nav-menu{
     margin-bottom: 3rem;
 }
+.pg5-bi-text{
+    margin-top: 2em;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    max-width: 500px;
+}
+.pg5-bi-title, .nav-menu-title, .pd-pg-title{
+    margin: 0 !important;
+}
+.pg5-bi-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nav-menu{
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 2.5em;
+    font-size: 1.1em;
+}
+.nav-menu-content{
+    display: flex;
+    flex-direction: column;
+    padding: 4em 4.6em;
+    text-align: justify;
+    justify-content: center;
+}
 .pd-pg-content{
     column-gap: 2em;
     margin-bottom: 4em;
-    margin-top: 5em;
+    margin-top: 10em;
 }
 .pd-pg-title{
     width: 40%;

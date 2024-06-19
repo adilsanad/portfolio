@@ -1,0 +1,121 @@
+body{
+    font-size: 1.2rem;
+    line-height: 1.15;
+
+    font-family: 'Syne';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #C1C1C1;
+    text-align: justify;
+}
+.hero-section, .work{
+    display: flex;
+    flex-direction: column;
+}
+.pg1-container{
+    position: relative;
+    background-image: url('images/Base\ BG.svg');
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+
+    font-weight: 700;
+    font-size: 4em;
+    justify-content: center;
+    margin-top: 2em;
+}
+.about-content{
+    padding: 0 1rem;
+}
+.about-header{
+    position: relative;
+    border-bottom: 3px solid white;
+    color: white;
+    font-size: 1.2em;
+    line-height: 0.3rem;
+    margin: 3em 0 4em;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(8px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.about-header-title{
+    justify-content: space-between;
+}
+.about-title{
+    font-size: 5em;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1em;
+}
+.skills{
+    margin-bottom: 2em;
+}
+.achv-grid{
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr 3fr;
+    column-gap: 0.5em;
+}
+.achv-heading{
+    line-height: 1;
+    font-size: 1.2em;
+}
+.achv-title{
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+.achv-subt{
+    font-size: 0.6em;
+    margin-top: 0.5em;
+}
+.about-image{
+    margin: 2em 1em;
+    height: 100%;
+    background-color: rgb(17, 17, 17, 0.8);
+    justify-content: center;
+    border-radius: 50px;
+    max-width: 550px;
+    justify-self: flex-start;
+    border: 1px solid white;
+}
+.about-image, .about-svg{
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .grid-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-image{
+        flex: 1 1;
+        width: 100%;
+        justify-self: center;
+        
+    }
+    .about-svg{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    
+}
