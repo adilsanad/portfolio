@@ -86,7 +86,7 @@ ul{
     margin-top: 0.5em;
 }
 .about-image{
-    margin: 2em 1em;
+    padding: 2em 0em;
     height: 100%;
     background-color: rgb(17, 17, 17, 0.8);
     justify-content: center;
@@ -94,26 +94,21 @@ ul{
     max-width: 550px;
     justify-self: flex-start;
     border: 1px solid white;
+
+    margin: auto
 }
 .about-image, .about-svg{
     width: 100%;
 }
 
 @media screen and (max-width:768px) {
-    
+    .grid-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media screen and (min-width:768px) and (max-width:992px) {
     .grid-4{
         grid-template-columns: repeat(2, 1fr);
-    }
-    .about-image{
-        flex: 1 1;
-        width: 100%;
-        justify-self: center;
-        
-    }
-    .about-svg{
-        display: none;
     }
 }
 @media screen and (min-width:992px) and (max-width:1200px) {

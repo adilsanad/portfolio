@@ -81,7 +81,7 @@ a{
 
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2em;
     row-gap: 0.5em;
 
@@ -111,6 +111,7 @@ a{
     text-wrap: wrap;
 }
 .pgrid-box{
+    display: flex;
     text-align: start;
     text-wrap: wrap;
     padding: 2em;
@@ -122,8 +123,12 @@ a{
     color: #B89145;
 }
 
-.tcr3{
+.tcr3b{
+    display: flex;
+    flex-direction: row;
     column-gap: 2em;
+    flex-wrap: nowrap !important;
+    align-items: center;
 }
 
 .ur-tc-flex{
@@ -211,6 +216,7 @@ a{
 }
 .brand-identity, .nav-menu{
     margin-bottom: 3rem;
+    gap: 3em;
 }
 .pg5-bi-text{
     margin-top: 2em;
@@ -228,16 +234,36 @@ a{
     justify-content: center;
 
 }
+.pg5-type-display{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    
+    font-family: 'Red Hat Display';
+    justify-content: center;
+    justify-self: center;
+}
+.font-display{
+    font-size: 8em;
+    margin: 0;
+}
+.font-name{
+    width: fit-content;
+    font-size: 1.5em;
+    padding: 0 2em 1em 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
 .nav-menu{
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 2.5em;
     font-size: 1.1em;
+    height: min-content;
 }
 .nav-menu-content{
     display: flex;
     flex-direction: column;
-    padding: 4em 4.6em;
-    text-align: justify;
+    padding: 4em 3em 2em;
+    text-align: center;
     justify-content: center;
 }
 .pd-pg-content{
@@ -263,11 +289,23 @@ a{
     body{
         font-size: 16px;
     }
-    .ur-up-grid{
+    .ur-up-grid, .project-grid{
         grid-template-columns: 1fr;
     }
-
-
+    .tc-overview, .tcr3b{
+        grid-column: auto / span 1 !important;
+        margin: 1em 0 0;
+    }
+    .mb{
+        margin-bottom: 1em;
+    }
+    .ur-tcf-p2-title{
+        text-align: right;
+        margin-right: 1em;
+    }
+    .pg5-bi-content, .pg5-bi-clr, .pg5-type, .pg5-type-display{
+        grid-column: span 4 !important;
+    }
 }
 @media screen and (min-width:768px) and (max-width:992px) {
     .ur-up-grid{

@@ -72,21 +72,7 @@ a{
      font-size: 1.6em;
      color: white;
 }
-.subcontainer{
-    max-width: 1240px;
-    padding: 2rem 1rem 4rem 1rem;
-    margin: auto;
-}
-.subcontainer-l{
-    max-width: 1360px;
-    padding: 2rem 1rem 4rem 1rem;
-    margin: auto;
-}
-.subcontainer-xl{
-    max-width: 1440px;
-    padding: 2rem 1rem 4rem 1rem;
-    margin: auto;
-}
+
 .project-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -207,11 +193,7 @@ a{
     text-align: justify;
     font-size: 0.8em;
 }
-.section-title{
-    display: flex;
-    color: white;
-    margin: 2rem auto 2rem;
-}
+
 .pg5-bi{
     display: flex;
     flex-direction: column;
@@ -235,13 +217,15 @@ a{
 .pg5-type, .pg6-lp-screen, .lp-sc-png, .pagrbilogo, .pagrbiphone, .pagrbitypo, .chimg, .spimg, .cm-pg, .map-img, .filterimg{
     width: 100%;
 }
+.filter-title{
+    margin-top: 3em;
+}
 .filter-content{
-    width: 35%;
     margin-top: -5em;
     min-width: 250px;
 }
 .filter-img{
-    width: 60%;
+    width: 100%;
     margin-right: -4em;
 }
 .nav-menu{
@@ -293,6 +277,18 @@ a{
     }
     .text-centre{
         text-align: justify;
+    }
+    .brand-identity, .filter-box{
+        grid-template-columns: 1fr !important;
+    }
+    .pagrbicolor, .pagrbitypo{
+        grid-column: auto / span 1 !important;
+    }
+    .pg5-bi-content{
+        margin-bottom: 2em;
+    }
+    .filter-content{
+        width: 100%;
     }
 
 }
